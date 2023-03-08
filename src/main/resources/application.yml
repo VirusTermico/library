@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto:update
+  datasource:
+    url: jdbc:mysql://localhost:3306/library?createDatabaseIfNotExist=true
+    username: root
+    password:
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+    baselineOnMigrate: true
